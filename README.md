@@ -9,3 +9,5 @@ The front-end is written in TypeScript and the back-end is written in Java. The 
 ### Screenshots
 
 ![Gave view](/images/caro-screenshot.png?raw=true "Game view")
+
+[![Matchmaking](http://img.youtube.com/vi/aRpsYe3jZHA/maxresdefault.jpg)](https://youtu.be/aRpsYe3jZHA "Matchmaking demonstration video")
