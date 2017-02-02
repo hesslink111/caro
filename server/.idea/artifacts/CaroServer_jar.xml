@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CaroServer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CaroServer_jar</output-path>
+    <root id="archive" name="CaroServer.jar">
+      <element id="module-output" name="Caro" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/gson-2.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/java_websocket.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

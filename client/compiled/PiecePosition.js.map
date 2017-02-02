@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/PiecePosition.js"],"names":[],"mappings":"AAAA;;;;IACM,a;;;;AAEN,QAAQ,aAAR,GAAwB,aAAxB;AACA","file":"PiecePosition.js","sourcesContent":["\"use strict\";\nclass PiecePosition {\n}\nexports.PiecePosition = PiecePosition;\n//# sourceMappingURL=PiecePosition.js.map"]}

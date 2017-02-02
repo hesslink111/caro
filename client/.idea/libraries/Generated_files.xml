@@ -1,0 +1,45 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/src/PiecePosition-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/PiecePosition-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/Main-compiled.js" />
+        <item url="file://$PROJECT_DIR$/compiled/PiecePosition-compiled-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/BoardSquare-compiled.js" />
+        <item url="file://$PROJECT_DIR$/compiled/BoardSquare-compiled-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/BoardSquare-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/Main-compiled.js" />
+        <item url="file://$PROJECT_DIR$/compiled/Main-compiled-compiled.js" />
+        <item url="file://$PROJECT_DIR$/compiled/bundle-compiled-compiled.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Main-compiled.js" />
+      <root url="file://$PROJECT_DIR$/BoardSquare-compiled.js" />
+      <root url="file://$PROJECT_DIR$/PiecePosition-compiled.js" />
+      <root url="file://$PROJECT_DIR$/bundle-compiled.js" />
+      <root url="file://$PROJECT_DIR$/bundle-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Main-compiled.js" />
+      <root url="file://$PROJECT_DIR$/BoardSquare-compiled.js" />
+      <root url="file://$PROJECT_DIR$/PiecePosition-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/bundle-compiled-compiled.js" />
+      <root url="file://$PROJECT_DIR$/output/bundle-compiled-compiled.js" />
+      <root url="file://$PROJECT_DIR$/output/bundle-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/bundle-compiled-compiled.js" />
+      <root url="file://$PROJECT_DIR$/output/bundle-compiled-compiled.js" />
+      <root url="file://$PROJECT_DIR$/output/bundle-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/PiecePosition-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/PiecePosition-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/Main-compiled.js" />
+      <root url="file://$PROJECT_DIR$/compiled/PiecePosition-compiled-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/BoardSquare-compiled.js" />
+      <root url="file://$PROJECT_DIR$/compiled/BoardSquare-compiled-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/BoardSquare-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/Main-compiled.js" />
+      <root url="file://$PROJECT_DIR$/compiled/Main-compiled-compiled.js" />
+      <root url="file://$PROJECT_DIR$/compiled/bundle-compiled-compiled.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

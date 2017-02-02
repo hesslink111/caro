@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/socket/MessageObject.js"],"names":[],"mappings":"AAAA;;AACA,MAAM,aAAN,CAAoB;AAEpB,QAAQ,aAAR,GAAwB,aAAxB","file":"MessageObject.js","sourcesContent":["\"use strict\";\nclass MessageObject {\n}\nexports.MessageObject = MessageObject;\n//# sourceMappingURL=MessageObject.js.map"]}

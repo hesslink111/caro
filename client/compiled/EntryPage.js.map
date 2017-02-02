@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/EntryPage.js"],"names":[],"mappings":"AAAA;;AACA,MAAM,SAAN,SAAwB,IAAxB,CAA6B;AAE7B,QAAQ,SAAR,GAAoB,SAApB","file":"EntryPage.js","sourcesContent":["\"use strict\";\nclass EntryPage extends Page {\n}\nexports.EntryPage = EntryPage;\n//# sourceMappingURL=EntryPage.js.map"]}

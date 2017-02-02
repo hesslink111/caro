@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entry Page</title>
+    <link rel="stylesheet" href="libraries/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="css/caro.css">
+    <script src="libraries/jquery/jquery.min.js"></script>
+    <script src="libraries/materialize/js/materialize.min.js"></script>
+    <script src="bundle.js"></script>
+</head>
+<body>
+
+<div class="template-dummy" data-template-name="modal"></div>
+
+<div class="template-dummy" data-template-name="navbar"></div>
+
+<main class="valign-wrapper">
+    <div class="container">
+
+        <!-- entry page -->
+        <div class="template-dummy" data-template-name="entry-page-main-row"></div>
+
+        <!-- entry page -->
+        <div class="template-dummy" data-template-name="sign-in-page-main-row"></div>
+
+        <!-- matchmaking -->
+        <div class="template-dummy" data-template-name="matchmaking-page-main-row"></div>
+
+        <!-- match found -->
+        <div class="template-dummy" data-template-name="match-found-page-main-row"></div>
+
+        <!-- match -->
+        <div class="template-dummy" data-template-name="match-page-main-row"></div>
+
+        <!-- match report -->
+        <div class="template-dummy" data-template-name="match-report-page-main-row"></div>
+
+        </div>
+    </div>
+</main>
+
+<!-- footer -->
+<div class="template-dummy" data-template-name="footer"></div>
+
+</body>
+
+</html><template id="footer">
+    <footer class="page-footer transparent">
+        <div class="footer-copyright blue-grey darken-1 z-depth-2">
+            <div class="container">
+                <span class="grey-text text-lighten-3">
+                    © 2016 Will Pease
+                </span>
+
+
+                <div class="right hide-on-small-and-down">
+                    <img class="left footer-copywrite-image" src="images/tic-tac-toe-icon-grey.svg">
+                    <span class="left hide-on-med-and-up hide-on-med-and-down">
+                        &nbsp; icon by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</template><template id="modal">
+    <div id="server-disconnected-modal" class="modal">
+        <div class="modal-content">
+            <h4>Server Disconnected</h4>
+            <p>Unable to connect to server at this time.</p>
+        </div>
+    </div>
+</template><template id="navbar">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue darken-2 z-depth-1">
+                <div class="container">
+                    <div class="col s12">
+                        <div class="left">
+                            <h4 class="grey-text text-lighten-3">Galactic Caveman Hunter</h4>
+                        </div>
+                        <ul id="nav-mobile" class="right hide-on-small-and-down">
+                            <li><a class="waves-effect waves-dark"><i class="material-icons medium grey-text text-lighten-3">info</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</template><template id="entry-page-main-row">
+    <div class="row main-page-row valign-wrapper">
+
+        <!-- entry-page -->
+        <div class="col m5 s12">
+            <div class="template-dummy" data-template-name="main-menu"></div>
+        </div>
+
+        <div class="col m5 offset-m2 hide-on-small-and-down">
+            <div class="template-dummy" data-template-name="tic-tac-toe-icon" data-template-noautoshow="true"></div>
+            <div class="template-dummy" data-template-name="player-card" data-template-instance-identity="current-player" data-template-noautoshow="true"></div>
+        </div>
+
+    </div>
+</template><template id="main-menu">
+    <ul class="collection main-page-collection z-depth-2">
+        <a class="main-menu-sign-in-button collection-item waves-effect waves-dark grey-text text-darken-4">Sign in</a>
+        <a class="collection-item inactive grey-text">Campaign</a>
+        <a class="main-menu-matchmaking-button collection-item inactive grey-text">Matchmaking</a>
+        <a class="collection-item inactive grey-text">Spectate</a>
+    </ul>
+</template><template id="tic-tac-toe-icon">
+    <img class="responsive-img" src="images/tic-tac-toe-icon-grey.svg">
+</template><template id="match-found-page-main-row">
+    <div class="row main-page-row">
+
+        <div class="template-dummy" data-template-name="match-start-count-down" data-template-noautoshow="true"></div>
+
+        <div class="col m6 s12">
+            <div class="template-dummy" data-template-name="player-card" data-template-instance-identity="current-player"></div>
+        </div>
+
+        <div class="col m6 s12">
+            <div class="template-dummy" data-template-name="player-card" data-template-instance-identity="other-player"></div>
+        </div>
+
+    </div>
+</template><template id="match-start-count-down">
+    <div class="col offset-m2 m8 s12">
+        <div class="card-panel blue-grey darken-1 grey-text text-lighten-3 center-align">
+            <h4 class="match-count-down-header"></h4>
+        </div>
+    </div>
+</template><template id="board-row">
+    <div class="board-row">
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="0"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="1"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="2"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="3"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="4"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="5"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="6"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="7"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="8"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="9"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="10"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="11"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="12"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="13"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="14"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="15"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="16"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="17"></div>
+        <div class="template-dummy" data-template-name="board-square" data-template-instance-identity="18"></div>
+    </div>
+</template><template id="board-square">
+    <div class="card-panel grey lighten-3 z-depth-0">
+        <div class="board-square-piece valign-wrapper">
+            <span class="center-block board-square-piece-char"></span>
+        </div>
+    </div>
+</template><template id="board">
+    <div class="card-panel blue-grey darken-1 board">
+        <div class="board-container z-depth-1">
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="0"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="1"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="2"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="3"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="4"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="5"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="6"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="7"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="8"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="9"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="10"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="11"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="12"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="13"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="14"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="15"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="16"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="17"></div>
+            <div class="template-dummy" data-template-name="board-row" data-template-instance-identity="18"></div>
+        </div>
+    </div>
+</template><template id="match-ended-modal-template">
+    <div id="match-ended-modal" class="modal">
+        <div class="modal-content">
+            <h4>Match Ended</h4>
+            <p class="modal-text"></p>
+            <div class="template-dummy" data-template-name="match-report"></div>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#" class="match-ended-modal-menu-button modal-action waves-effect waves-green btn-flat">Back to Menu</a>
+            <a href="#" class="match-ended-modal-new-match-button modal-action waves-effect waves-green btn-flat">New Game</a>
+        </div>
+    </div>
+</template><template id="match-page-main-row">
+    <div class="row main-page-row">
+        <div class="template-dummy" data-template-name="match-ended-modal-template"></div>
+
+        <div class="col m8 s12">
+            <div class="template-dummy" data-template-name="board"></div>
+        </div>
+
+        <div class="col m4 s12">
+            <div class="template-dummy" data-template-name="player-card" data-template-instance-identity="current-player"></div>
+        </div>
+        <div class="col m4 s12">
+            <div class="template-dummy" data-template-name="player-card" data-template-instance-identity="other-player"></div>
+        </div>
+
+    </div>
+</template><template id="match-report">
+    <table>
+        <tbody>
+        <tr>
+            <th>Player</th>
+            <th>Wins</th>
+            <th>Losses</th>
+        </tr>
+        <tr data-instance-identity="current-player">
+            <td class="player-name">PlayerName</td>
+            <td class="player-wins">10</td>
+            <td class="player-losses">1</td>
+        </tr>
+        <tr data-instance-identity="other-player">
+            <td class="player-name">PlayerName</td>
+            <td class="player-wins">10</td>
+            <td class="player-losses">1</td>
+        </tr>
+        </tbody>
+    </table>
+</template><template id="match-report-card">
+    <div class="card blue-grey darken-1 grey-text text-lighten-3">
+        <div class="card-content">
+            <span class="card-title">Carnage Report</span>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Player</th>
+                        <th>Moves</th>
+                        <th>Wins</th>
+                    </tr>
+                    <tr>
+                        <td>PlayerName</td>
+                        <td>10</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>PlayerName</td>
+                        <td>200</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-action right-align">
+            <a class="match-report-card-back-button" href="#">Back to Menu</a>
+            <a class="match-report-card-new-match-button" href="#">New Match</a>
+        </div>
+    </div>
+</template><template id="match-report-page-main-row">
+    <div class="row main-page-row">
+        
+        <!-- entry-page -->
+        <div class="col s12">
+            <div class="template-dummy" data-template-name="match-report-card"></div>
+        </div>
+
+    </div>
+</template><template id="matchmaking-page-main-row">
+    <div class="row main-page-row">
+        
+        <!-- entry-page -->
+        <div class="col m6 s12">
+            <div class="template-dummy" data-template-name="player-card" data-template-instance-identity="current-player"></div>
+        </div>
+
+        <div class="col m6 s12">
+            <div class="template-dummy" data-template-name="player-search-card"></div>
+        </div>
+
+    </div>
+</template><template id="player-card">
+    <div class="card blue-grey darken-1">
+        <div class="card-content grey-text text-lighten-3">
+
+            <div class="card-image">
+                <img class="player-icon">
+            </div>
+            <span class="player-turn-indicator-helper">
+                <span class="player-turn-indicator hide"><i class="material-icons player-turn-indicator-icon">play_arrow</i> </span>
+                <span class="card-title player-name">PlayerName</span>
+            </span>
+            <p class="player-piece hide">xyz</p>
+            <p class="player-wins">Wins: </p>
+            <p class="player-losses">Losses: </p>
+        </div>
+    </div>
+</template><template id="player-search-card">
+    <div class="card blue-grey darken-1">
+        <div class="card-content grey-text text-lighten-3">
+            <span class="card-title">Looking for player...</span>
+            <table>
+                <tbody>
+                <tr>
+                    <td><div class="progress grey darken-4">
+                        <div class="indeterminate grey lighten-1"></div>
+                    </div>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template><template id="edit-player-icon-modal-template">
+    <div id="edit-player-icon-modal" class="modal">
+        <div class="modal-content">
+            <h4>Edit Icon</h4>
+            <p class="modal-text">Select an icon:</p>
+            <img class="player-icon-choice" data-player-icon="boy-0" src="images/player/boy-0.svg">
+            <img class="player-icon-choice" data-player-icon="boy-1" src="images/player/boy-1.svg">
+            <img class="player-icon-choice" data-player-icon="boy-2" src="images/player/boy-2.svg">
+            <img class="player-icon-choice" data-player-icon="boy-3" src="images/player/boy-3.svg">
+            <img class="player-icon-choice" data-player-icon="boy-4" src="images/player/boy-4.svg">
+            <img class="player-icon-choice" data-player-icon="boy-5" src="images/player/boy-5.svg">
+            <img class="player-icon-choice" data-player-icon="boy-6" src="images/player/boy-6.svg">
+            <img class="player-icon-choice" data-player-icon="boy-7" src="images/player/boy-7.svg">
+            <img class="player-icon-choice" data-player-icon="boy-8" src="images/player/boy-8.svg">
+            <img class="player-icon-choice" data-player-icon="boy-9" src="images/player/boy-9.svg">
+            <img class="player-icon-choice" data-player-icon="boy-10" src="images/player/boy-10.svg">
+            <img class="player-icon-choice" data-player-icon="boy-11" src="images/player/boy-11.svg">
+            <img class="player-icon-choice" data-player-icon="boy-12" src="images/player/boy-12.svg">
+            <img class="player-icon-choice" data-player-icon="boy-13" src="images/player/boy-13.svg">
+            <img class="player-icon-choice" data-player-icon="boy-14" src="images/player/boy-14.svg">
+            <img class="player-icon-choice" data-player-icon="boy-15" src="images/player/boy-15.svg">
+            <img class="player-icon-choice" data-player-icon="boy-16" src="images/player/boy-16.svg">
+            <img class="player-icon-choice" data-player-icon="boy-17" src="images/player/boy-17.svg">
+            <img class="player-icon-choice" data-player-icon="boy-18" src="images/player/boy-18.svg">
+            <img class="player-icon-choice" data-player-icon="boy-19" src="images/player/boy-19.svg">
+            <img class="player-icon-choice" data-player-icon="boy-20" src="images/player/boy-20.svg">
+            <img class="player-icon-choice" data-player-icon="boy-21" src="images/player/boy-21.svg">
+            <img class="player-icon-choice" data-player-icon="boy-22" src="images/player/boy-22.svg">
+            <img class="player-icon-choice" data-player-icon="girl-0" src="images/player/girl-0.svg">
+            <img class="player-icon-choice" data-player-icon="girl-1" src="images/player/girl-1.svg">
+            <img class="player-icon-choice" data-player-icon="girl-2" src="images/player/girl-2.svg">
+            <img class="player-icon-choice" data-player-icon="girl-3" src="images/player/girl-3.svg">
+            <img class="player-icon-choice" data-player-icon="girl-4" src="images/player/girl-4.svg">
+            <img class="player-icon-choice" data-player-icon="girl-5" src="images/player/girl-5.svg">
+            <img class="player-icon-choice" data-player-icon="girl-6" src="images/player/girl-6.svg">
+            <img class="player-icon-choice" data-player-icon="girl-7" src="images/player/girl-7.svg">
+            <img class="player-icon-choice" data-player-icon="girl-8" src="images/player/girl-8.svg">
+            <img class="player-icon-choice" data-player-icon="girl-9" src="images/player/girl-9.svg">
+            <img class="player-icon-choice" data-player-icon="girl-10" src="images/player/girl-10.svg">
+            <img class="player-icon-choice" data-player-icon="girl-11" src="images/player/girl-11.svg">
+            <img class="player-icon-choice" data-player-icon="girl-12" src="images/player/girl-12.svg">
+            <img class="player-icon-choice" data-player-icon="girl-13" src="images/player/girl-13.svg">
+            <img class="player-icon-choice" data-player-icon="girl-14" src="images/player/girl-14.svg">
+            <img class="player-icon-choice" data-player-icon="girl-15" src="images/player/girl-15.svg">
+            <img class="player-icon-choice" data-player-icon="girl-16" src="images/player/girl-16.svg">
+            <img class="player-icon-choice" data-player-icon="girl-17" src="images/player/girl-17.svg">
+            <img class="player-icon-choice" data-player-icon="girl-18" src="images/player/girl-18.svg">
+            <img class="player-icon-choice" data-player-icon="girl-19" src="images/player/girl-19.svg">
+            <img class="player-icon-choice" data-player-icon="girl-20" src="images/player/girl-20.svg">
+            <img class="player-icon-choice" data-player-icon="girl-21" src="images/player/girl-21.svg">
+            <img class="player-icon-choice" data-player-icon="girl-22" src="images/player/girl-22.svg">
+            <img class="player-icon-choice" data-player-icon="girl-23" src="images/player/girl-23.svg">
+            <img class="player-icon-choice" data-player-icon="girl-24" src="images/player/girl-24.svg">
+            <img class="player-icon-choice" data-player-icon="girl-25" src="images/player/girl-25.svg">
+            <img class="player-icon-choice" data-player-icon="girl-26" src="images/player/girl-26.svg">
+        </div>
+
+        <div class="modal-footer">
+            <a href="#" class="edit-player-icon-cancel-button modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+            <a href="#" class="edit-player-icon-submit-button disabled modal-action waves-effect waves-green btn-flat">Submit</a>
+        </div>
+    </div>
+</template><template id="edit-player-profile-modal-template">
+    <div id="edit-player-profile-modal" class="modal">
+        <div class="modal-content">
+            <h4>Edit Profile</h4>
+            <p class="modal-text"></p>
+            <form>
+                <div>
+                    <input placeholder="name" id="username-field" type="text">
+                    <label for="username-field">Name</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#" class="edit-player-profile-cancel-button modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+            <a href="#" class="edit-player-profile-submit-button modal-action waves-effect waves-green btn-flat">Submit</a>
+        </div>
+    </div>
+</template><template id="player-icon-editor-card">
+    <div class="card blue-grey darken-1">
+        <div class="card-content grey-text text-lighten-3">
+            <span class="card-title">Player Icon</span>
+            <div class="card-image">
+                <img class="player-icon">
+            </div>
+        </div>
+        <div class="card-action">
+            <a href="#" class="edit-player-icon-button">Edit</a>
+        </div>
+    </div>
+</template><template id="player-profile-editor-card">
+    <div class="card blue-grey darken-1">
+        <div class="card-content grey-text text-lighten-3">
+            <span class="card-title">Player Profile</span>
+            <p>Name: <span class="player-name">PlayerName</span></p>
+        </div>
+        <div class="card-action">
+            <a href="#" class="edit-player-profile-button">Edit</a>
+        </div>
+    </div>
+</template><template id="sign-in-page-main-row">
+    <div class="row main-page-row">
+
+        <div class="template-dummy" data-template-name="edit-player-icon-modal-template"></div>
+        <div class="template-dummy" data-template-name="edit-player-profile-modal-template"></div>
+
+        <div class="card blue-grey darken-1 grey-text text-lighten-3">
+            <div class="card-content">
+                <span class="card-title">Edit Player</span>
+                <div class="template-dummy" data-template-name="player-icon-editor-card"></div>
+
+                <div class="template-dummy" data-template-name="player-profile-editor-card"></div>
+            </div>
+            <div class="card-action">
+                <a class="player-editor-menu-button" href="#">Back to Menu</a>
+            </div>
+        </div>
+
+    </div>
+</template>

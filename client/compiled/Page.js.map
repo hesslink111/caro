@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/Page.js"],"names":[],"mappings":"AAAA;;AACA,MAAM,IAAN,CAAW;AAEX,QAAQ,IAAR,GAAe,IAAf","file":"Page.js","sourcesContent":["\"use strict\";\nclass Page {\n}\nexports.Page = Page;\n//# sourceMappingURL=Page.js.map"]}

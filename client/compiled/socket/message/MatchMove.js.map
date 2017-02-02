@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/socket/message/MatchMove.js"],"names":[],"mappings":"AAAA;;;;IACM,S;;;;AAEN,QAAQ,SAAR,GAAoB,SAApB;AACA","file":"MatchMove.js","sourcesContent":["\"use strict\";\nclass MatchMove {\n}\nexports.MatchMove = MatchMove;\n//# sourceMappingURL=MatchMove.js.map"]}
